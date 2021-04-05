@@ -64,6 +64,15 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void RestartGame()
     {
+        score = 0;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    /// <summary>
+    /// 退出游戏
+    /// </summary>
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
